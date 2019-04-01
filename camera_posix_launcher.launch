@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+  <include file="$(find px4)/launch/mavros_posix_sitl.launch">
+    <arg name="vehicle" value="iris" />
+    <arg name="sdf" value="$(find mavlink_sitl_gazebo)/models/$(arg my_model_name)/$(arg my_model_name).sdf"/>
+  </include>
+  <!--<node name="offboard_example" pkg="mavros_tutorial" type="offboard_example" output="screen"/>-->
+</launch>
