@@ -21,6 +21,9 @@ find_package(catkin REQUIRED COMPONENTS
   rospy
   std_msgs
   image_proc
+  cv_bridge
+  sensor_msgs
+  image_transport
   OpenCV REQUIRED
 )
 
